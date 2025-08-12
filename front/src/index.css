@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f6; /* bg-gray-100 */
+  color: #111827; /* text-gray-900 */
+}
+
+section {
+  padding: 40px 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+}
+
+.hero-bg {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url('https://images.unsplash.com/photo-1550317138-10000687a72b');
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background-color: #f7931e;
+  border-color: #f7931e;
+}
+
+.btn-primary:hover {
+  background-color: #e5831c;
+  border-color: #e5831c;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f7931e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5831c;
+}
+
+.promotion-bg {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1550547660-d9450f859349');
+  background-size: cover;
+  background-position: center;
+}
